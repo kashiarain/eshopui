@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-gray-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-extrabold text-white hover:text-gray-400">
+                        Brand
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="about.html" class="text-white hover:text-gray-400 px-3 py-2 rounded-md text-lg font-medium">About</a>
+                    <a href="contact.html" class="text-white hover:text-gray-400 px-3 py-2 rounded-md text-lg font-medium">Contact</a>
+                    <a href="services.html" class="text-white hover:text-gray-400 px-3 py-2 rounded-md text-lg font-medium">Services</a>
+                </div>
+            </div>
+        </div>
+      
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Contact Us</h1>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                    <textarea id="message" name="message"
+                        class="appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <!-- <button type="submit"
+                        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        Send Message
+                    </button> -->
+                    <a href="about.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Send Message</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                    <h2 class="text-2xl font-extrabold mb-4">Brand</h2>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">Navigation</h3>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">1234 Street Name</p>
+                    <p class="text-gray-400">City, State, 12345</p>
+                    <p class="text-gray-400">Email: info@example.com</p>
+                    <p class="text-gray-400">Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2.25C6.615 2.25 2.25 6.615 2.25 12S6.615 21.75 12 21.75 21.75 17.385 21.75 12 17.385 2.25 12 2.25zM9.75 11.7h1.5v-1.2c0-.99.81-1.8 1.8-1.8h.9v1.5h-.9c-.165 0-.3.135-.3.3v.9h1.2l-.15 1.5h-1.05v4.5h-1.5v-4.5H9.75v-1.5zm-3-1.5h1.5v6h-1.5v-6zM10.5 6.75A.75.75 0 1012 6a.75.75 0 00-1.5.75z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22.162 5.656c-.796.356-1.655.597-2.556.704a4.48 4.48 0 001.96-2.475 8.84 8.84 0 01-2.817 1.078 4.446 4.446 0 00-7.61 4.046 12.615 12.615 0 01-9.188-4.656 4.447 4.447 0 001.376 5.944 4.394 4.394 0 01-2.016-.556v.055a4.447 4.447 0 003.567 4.354 4.392 4.392 0 01-2.01.075 4.448 4.448 0 004.152 3.086A8.906 8.906 0 012 19.792a12.58 12.58 0 006.812 1.996c8.172 0 12.634-6.767 12.634-12.634l-.015-.574a8.982 8.982 0 002.207-2.283z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 6.242c-.81.36-1.68.605-2.596.715A4.481 4.481 0 0021.362 4.8c-.902.537-1.9.923-2.963 1.135a4.448 4.448 0 00-7.57 4.06 12.598 12.598 0 01-9.175-4.647 4.447 4.447 0 001.38 5.934 4.394 4.394 0 01-2.015-.558v.056a4.447 4.447 0 003.568 4.352 4.392 4.392 0 01-2.01.075 4.448 4.448 0 004.153 3.086 8.901 8.901 0 01-5.506 1.897 12.586 12.586 0 006.813 1.996c8.172 0 12.633-6.767 12.633-12.633l-.014-.574A8.996 8.996 0 0024 4.907a8.834 8.834 0 01-2.588.71 4.459 4.459 0 001.951-2.475 8.8 8.8 0 01-2.812 1.079 4.464 4.464 0 00-7.609 4.046A12.62 12.62 0 011.172 5.206a4.447 4.447 0 001.374 5.944 4.394 4.394 0 01-2.015-.558v.056a4.447 4.447 0 003.568 4.352 4.392 4.392 0 01-2.01.075 4.448 4.448 0 004.153 3.086 8.9 8.9 0 01-5.506 1.897A12.586 12.586 0 006.825 23C14.998 23 19.46 16.233 19.46 9.466v-.575A8.993 8.993 0 0022 6.243z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="bg-gray-700 py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Brand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
