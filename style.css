@@ -971,8 +971,6 @@ video {
   display: grid;
 }
 
-<<<<<<< HEAD
-=======
 .inline-grid {
   display: inline-grid;
 }
@@ -985,7 +983,6 @@ video {
   display: list-item;
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 .hidden {
   display: none;
 }
@@ -1006,10 +1003,6 @@ video {
   height: 15rem;
 }
 
-<<<<<<< HEAD
-.h-6 {
-  height: 1.5rem;
-=======
 .h-7 {
   height: 1.75rem;
 }
@@ -1020,7 +1013,6 @@ video {
 
 .h-auto {
   height: auto;
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 }
 
 .w-16 {
@@ -1131,14 +1123,6 @@ video {
   max-width: 80rem;
 }
 
-<<<<<<< HEAD
-.max-w-3xl {
-  max-width: 48rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
-=======
 .max-w-xs {
   max-width: 20rem;
 }
@@ -1153,7 +1137,6 @@ video {
 
 .flex-grow {
   flex-grow: 1;
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 }
 
 .grow {
@@ -1361,8 +1344,6 @@ video {
           appearance: none;
 }
 
-<<<<<<< HEAD
-=======
 .appearance-auto {
   -webkit-appearance: auto;
      -moz-appearance: auto;
@@ -1488,13 +1469,10 @@ video {
   grid-auto-flow: column dense;
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-<<<<<<< HEAD
-=======
 .flex-row {
   flex-direction: row;
 }
@@ -1511,18 +1489,14 @@ video {
   flex-direction: column-reverse;
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 .flex-wrap {
   flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
-=======
 .flex-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 .flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -1741,8 +1715,6 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-<<<<<<< HEAD
-=======
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 1;
 }
@@ -1859,7 +1831,6 @@ video {
   overflow: auto;
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 .overflow-hidden {
   overflow: hidden;
 }
@@ -2152,8 +2123,6 @@ video {
   border-width: 1px;
 }
 
-<<<<<<< HEAD
-=======
 .border-2 {
   border-width: 2px;
 }
@@ -2192,13 +2161,10 @@ video {
   border-inline-start-width: 1px;
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 .border-t {
   border-top-width: 1px;
 }
 
-<<<<<<< HEAD
-=======
 .border-solid {
   border-style: solid;
 }
@@ -2233,7 +2199,7 @@ video {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
+
 .border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
@@ -2446,21 +2412,19 @@ video {
   padding: 1rem;
 }
 
-<<<<<<< HEAD
+
 .p-8 {
   padding: 2rem;
-=======
+}
 .p-5 {
   padding: 1.25rem;
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 }
 
 .p-6 {
   padding: 1.5rem;
 }
 
-<<<<<<< HEAD
-=======
+
 .p-7 {
   padding: 1.75rem;
 }
@@ -2469,7 +2433,6 @@ video {
   padding: 2rem;
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2547,13 +2510,10 @@ video {
   padding-top: 2rem;
 }
 
-<<<<<<< HEAD
-=======
 .text-left {
   text-align: left;
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 .text-center {
   text-align: center;
 }
@@ -3415,8 +3375,6 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-<<<<<<< HEAD
-=======
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -3432,14 +3390,11 @@ video {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-<<<<<<< HEAD
-=======
 .focus\:ring-2:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -3463,31 +3418,24 @@ video {
   text-align: center;
 }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-<<<<<<< HEAD
-=======
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
   }
 
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-<<<<<<< HEAD
-=======
 
   .sm\:underline {
     text-decoration-line: underline;
   }
->>>>>>> a95870be6db167d1133099d4f5c8fa0ca2d0d08c
 }
 
 @media (min-width: 768px) {
