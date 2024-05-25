@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard - Shipping</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <div class="container mx-auto px-4 py-8">
+
+        <h1 class="text-3xl font-bold text-gray-800 mb-6">Shipping</h1>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Shipping Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="shippingAddress" class="block text-sm font-medium text-gray-700">Shipping Address:</label>
+                    <textarea id="shippingAddress" name="shippingAddress" rows="3" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                <div>
+                    <label for="recipient" class="block text-sm font-medium text-gray-700">Recipient:</label>
+                    <input type="text" id="recipient" name="recipient" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Shipping Options</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="shippingMethod" class="block text-sm font-medium text-gray-700">Select Shipping Method:</label>
+                    <select id="shippingMethod" name="shippingMethod" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <option>Standard Shipping</option>
+                        <option>Express Shipping</option>
+                        <option>Priority Shipping</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deliveryDate" class="block text-sm font-medium text-gray-700">Select Delivery Date:</label>
+                    <input type="date" id="deliveryDate" name="deliveryDate" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Additional Functions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <button class="bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-4 py-2">Validate Address</button>
+                </div>
+                <div>
+                    <button class="bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-4 py-2">Calculate Shipping Cost</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-end">
+            <button class="bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-4 py-2">Update Shipping</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
