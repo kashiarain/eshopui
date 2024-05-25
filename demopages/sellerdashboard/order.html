@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+
+    <!-- Main Content -->
+    <div class="container px-6 py-8 mx-auto">
+        <h2 class="text-3xl font-semibold text-gray-800">Order List</h2>
+
+        <!-- Search and Filter Bar -->
+        <div class="flex flex-col justify-between mt-6 space-y-4 md:flex-row md:space-y-0">
+            <div class="flex items-center space-x-4">
+                <input type="text" placeholder="Search orders..." class="block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <select id="filter" name="filter" class="block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+            </div>
+            <div>
+                <button class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Add New Order
+                </button>
+            </div>
+        </div>
+
+        <!-- Orders Table -->
+        <div class="mt-8 overflow-hidden bg-white rounded-lg shadow-md">
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr class="w-full bg-gray-200">
+                        <th class="px-4 py-2 text-left text-gray-600">
+                            <button class="flex items-center space-x-2">
+                                <span>Order ID</span>
+                                <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                        </th>
+                        <th class="px-4 py-2 text-left text-gray-600">Customer</th>
+                        <th class="px-4 py-2 text-left text-gray-600">Date</th>
+                        <th class="px-4 py-2 text-left text-gray-600">Amount</th>
+                        <th class="px-4 py-2 text-left text-gray-600">Status</th>
+                        <th class="px-4 py-2 text-left text-gray-600">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="px-4 py-2 border-t">12345</td>
+                        <td class="px-4 py-2 border-t">John Doe</td>
+                        <td class="px-4 py-2 border-t">01/01/2024</td>
+                        <td class="px-4 py-2 border-t">$150.00</td>
+                        <td class="px-4 py-2 border-t">
+                            <span class="px-2 py-1 text-sm font-medium text-green-800 bg-green-100 rounded-full">Completed</span>
+                        </td>
+                        <td class="px-4 py-2 border-t">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-900">View</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-4 py-2 border-t">12346</td>
+                        <td class="px-4 py-2 border-t">Jane Smith</td>
+                        <td class="px-4 py-2 border-t">01/02/2024</td>
+                        <td class="px-4 py-2 border-t">$200.00</td>
+                        <td class="px-4 py-2 border-t">
+                            <span class="px-2 py-1 text-sm font-medium text-yellow-800 bg-yellow-100 rounded-full">Pending</span>
+                        </td>
+                        <td class="px-4 py-2 border-t">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-900">View</a>
+                        </td>
+                    </tr>
+                    <!-- More rows... -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center space-x-4">
+                <button class="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-200 rounded hover:bg-gray-300">Previous</button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-200 rounded hover:bg-gray-300">Next</button>
+            </div>
+            <div>
+                <span class="text-sm text-gray-600">Showing 1 to 10 of 50 results</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
