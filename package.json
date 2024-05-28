@@ -3,6 +3,6 @@
     "tailwindcss": "^3.4.3"
   },
   "scripts": {
-    "watch": "npx tailwindcss -i tw.css -o style.css --watch"
+    "watch": "npx tailwindcss -i tw.css -o main.css --watch"
   }
 }
