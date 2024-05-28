@@ -9,115 +9,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <nav class="bg-[black] p-2">
-        <section class="flex ">
-            <div class="ml-10">
-                <ul class="  flex gap-4 mt-3">
-                    <li class="text-white font-semibold text-[38px]"><a href="#">AliExpress</a></li>
-                    <li class="text-white text-[36px]"><a href="#">|</a></li>
-                    <li class="text-white font-bold text-[26px] mt-4"><a href="#">EURO2024</a></li>
+<body class="font-sans">
+    <nav class="bg-black p-4">
+        <section class="flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <ul class="flex items-center gap-4">
+                    <li class="text-white font-semibold text-3xl"><a href="#">AliExpress</a></li>
+                    <li class="text-white text-3xl"><a href="#">|</a></li>
+                    <li class="text-white font-bold text-xl mt-1"><a href="#">EURO2024</a></li>
                 </ul>
-                <h1 class="text-white ml-32  text-[12px] font-thin font-mono"><a href="#">OFFICIAL PARTNER</a></h1>
+                <h1 class="text-white text-xs font-thin font-mono ml-4"><a href="#">OFFICIAL PARTNER</a></h1>
             </div>
-            <form class="bg-white my-5 p-2 flex rounded-full  mx-6">
-                <input type="search" placeholder="air buds bluthooth "
-                    class=" w-[850px] ml-3 placeholder:text-xl outline-none ">
-                <button><i
-                        class="fa-solid fa-magnifying-glass bg-black text-white  p-3 w-16 rounded-full "></i></button>
+            <form class="bg-white flex items-center rounded-full overflow-hidden">
+                <input type="search" placeholder="air buds bluetooth" class="w-96 p-2 text-lg outline-none">
+                <button type="submit" class="bg-black text-white p-3"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-            <ul class="mt-5 gap-5 flex">
-                <li class="flex ml-2">
-                    <h1 class="text-white text-[32px] "><a href="#"></a><i class="fa-solid fa-qrcode"></i></a></h1>
-                    <h2 class="text-white text-[20px] ml-3 mt-4 font-light "><a href="#"><i
-                                class="fa-solid fa-angle-down"></i></a></h2>
-                </li>
-
-                <li class="flex  mt-3  ">
+            <ul class="flex items-center gap-6 text-white text-2xl">
+                <li><a href="#"><i class="fa-solid fa-qrcode"></i></a></li>
+                <li class="flex items-center">
                     <a href="#"><img src="/images/download (1).jfif" alt="" class="h-7"></a>
-                    <h2 class="text-white text-[20px] ml-3 mt-1 font-light "><a href="#"><i
-                                class="fa-solid fa-angle-down"></i></a></h2>
+                    <a href="#"><i class="fa-solid fa-angle-down ml-2"></i></a>
                 </li>
-
-                <li class="flex ">
-                    <h1 class="text-white text-[30px] "><a href="#"></a><i class="fa-solid fa-user"></i></a></h1>
-                    <h2 class="text-white text-[20px] ml-3 mt-4 font-light "><a href="#"><i
-                                class="fa-solid fa-angle-down"></i></a></h2>
+                <li class="flex items-center">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-angle-down ml-2"></i></a>
                 </li>
-
-                <li class="flex ">
-                    <h1 class="text-white text-[30px] "><a href="#"></a><i class="fa-solid fa-cart-shopping"></i></a>
-                    </h1>
-                    <h2 class="text-white text-[20px] ml-3 mt-4 font-light "><a href="#"><i
-                                class="fa-solid fa-angle-down"></i></a></h2>
+                <li class="flex items-center">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-angle-down ml-2"></i></a>
                 </li>
             </ul>
         </section>
     </nav>
 
     <section>
-        <h1 class="text-[40px] font-bold ml-14 my-7 ">Home & Garden</h1>
+        <h1 class="text-4xl font-bold ml-14 my-7">Home & Garden</h1>
         <hr>
-        <div class="flex ml-16 my-5 gap-16">
-            <div>
-                <a href="#"><img src="/images/img1.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">Table Decoration &...</a>
-                </h1>
+        <div class="flex flex-wrap justify-center gap-16 my-5">
+            <div class="text-center">
+                <a href="#"><img src="/images/img1.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Table Decoration &...</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#"> Yard & Garden Decors</a>
-                </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Yard & Garden Decors</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img2.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">Wall Art</a> </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img2.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Wall Art</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img3.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">Vase</a> </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img3.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Vase</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img4.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">CookWare BBQ</a> </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img4.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">CookWare BBQ</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img6.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">Cushoins</a> </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img6.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Cushions</a></h1>
             </div>
-        </div>
-        <div class="flex ml-16 my-5 gap-16">
-            <div>
-                <a href="#"><img src="/images/img7.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#"></a> Dinner Plate</h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img7.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Dinner Plate</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img8.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">Home Fragrance</a> </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img8.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Home Fragrance</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img9.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">Decorative Mirrors</a>
-                </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img9.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Decorative Mirrors</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img10.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">Outdoor Decors</a> </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img10.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Outdoor Decors</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img11.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">Artificial flowers</a>
-                </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img11.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Artificial Flowers</a></h1>
             </div>
-            <div>
-                <a href="#"><img src="/images/img12.jfif" alt="" class=" h-52 w-52 rounded-full "></a>
-                <h1 class="mt-2 text-[30px] font-semibold w-[210px] text-center"><a href="#">Garden Buildings</a> </h1>
+            <div class="text-center">
+                <a href="#"><img src="/images/img12.jfif" alt="" class="h-52 w-52 rounded-full"></a>
+                <h1 class="mt-2 text-2xl font-semibold"><a href="#">Garden Buildings</a></h1>
             </div>
         </div>
-
-
     </section>
 </body>
 
