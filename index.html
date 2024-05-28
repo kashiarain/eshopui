@@ -1,944 +1,728 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <header class="bg-slate-800 text-white">
-    <nav class="bg-slate-700">
-       <div class="flex justify-end mx-auto container">
-          <ul class="flex gap-4 *:p-1 *:font-semibold">
-             <li><a href="#">Customer Service</a></li>
-             <li><a href="#">Gift Cards</a></li>
-             <li><a href="#">Sell</a></li>
-          </ul>
-       </div>
-    </nav>
-    <nav
-       class="flex flex-wrap md:flex-nowrap justify-between items-center gap-x-4 gap-y-1 mx-auto py-2 p-1 container">
-       <!-- Logo -->
-       <a href="/" class="flex items-center">
-          <!-- <img src="https://via.placeholder.com/150x50" alt="Logo" class="mr-4 h-10"> -->
-          <span class="font-bold text-2xl">eShop</span>
-       </a>
-       <form action=""
-          class="flex flex-grow gap-2 border-2 order-last md:order-none bg-white p-1 border-rose-400 rounded-full">
-
-          <select
-             class="sm:block lg:block hidden md:hidden bg-slate-800 px-3 border-none rounded-full cursor-pointer appearance-none outline-none">
-             <option selected>All Departments</option>
-             <option>Arts &amp; Crafts</option>
-             <option>Automotive</option>
-             <option>Baby</option>
-             <option>Books</option>
-             <option>Boys' Fashion</option>
-             <option>Computers</option>
-             <option>Deals</option>
-             <option>Digital Music</option>
-             <option>Electronics</option>
-             <option>Girls' Fashion</option>
-             <option>Health &amp; Household</option>
-             <option>Home &amp; Kitchen</option>
-             <option>Kindle Store</option>
-             <option>Luggage</option>
-             <option>Men's Fashion</option>
-             <option>Movies &amp; TV</option>
-             <option>Music, CDs &amp; Vinyl</option>
-             <option>Pet Supplies</option>
-             <option>Prime Video</option>
-             <option>Software</option>
-             <option>Sports &amp; Outdoors</option>
-             <option>Toys &amp; Games</option>
-             <option>Video Games</option>
-             <option>Women's Fashion</option>
-          </select>
-          <input type="text" placeholder="Search..."
-             class="px-4 py-1 border-none rounded-full w-full text-black outline-none">
-          <button class="flex items-center gap-1 bg-rose-500 px-3 rounded-full text-white">
-             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                fill="#e8eaed">
-                <path
-                   d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
-             </svg>
-             Search
-          </button>
-       </form>
-       <ul class="flex items-center">
-          <li>
-             <a href="#" class="flex items-center gap-1 hover:bg-slate-900 px-4 py-1.5 rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                   fill="#e8eaed">
-                   <path
-                      d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
-                </svg>
-                <span>Cart</span>
-             </a>
-          </li>
-          <li class="relative group">
-             <a href="#"
-                class="group-hover:bg-slate-900 after:right-[-16px] before:bottom-0 after:bottom-0 before:left-[-16px] before:absolute after:absolute flex items-center gap-1 group-hover:before:shadow-[8px_8px_0_#0f172a] group-hover:after:shadow-[-8px_8px_0_#0f172a] px-4 py-1.5 rounded-b-none rounded-lg before:rounded-full after:rounded-full before:w-4 after:w-4 before:h-4 after:h-4">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                   fill="#e8eaed">
-                   <path
-                      d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
-                </svg>
-                <span>Account</span>
-             </a>
-             <ul class="group-hover:visible top-full -left-1/2 absolute bg-slate-900 rounded-lg w-56 invisible">
-
-                <li class="">
-                   <a href=""
-                      class="flex justify-between items-center hover:bg-slate-700 px-2 p-2 border-b rounded-t-lg">
-                      <span class="text-lg">New customer?</span>
-                      <span class="font-semibold text-lg text-sky-300">Sign Up</span>
-                   </a>
-                </li>
-                <li class="hover:bg-slate-700 px-4 p-2"><a href="">My Profile</a></li>
-                <li class="hover:bg-slate-700 px-4 p-2"><a href="">Flipkart Plus Zone</a></li>
-                <li class="hover:bg-slate-700 px-4 p-2"><a href="">Orders</a></li>
-                <li class="hover:bg-slate-700 px-4 p-2"><a href="">Wishlist</a></li>
-                <li class="hover:bg-slate-700 px-4 p-2"><a href="">Rewards</a></li>
-                <li class="hover:bg-slate-700 px-4 p-2 rounded-b-lg"><a href="">Gift Cards</a></li>
-             </ul>
-
-          </li>
-          <li class="relative group">
-             <a href="#"
-                class="group-hover:bg-slate-900 relative before:bottom-0 before:left-[-16px] before:absolute flex items-center group-hover:before:shadow-[8px_8px_0_#0f172a] px-4 py-1.5 rounded-b-none rounded-lg before:rounded-full before:w-4 before:h-4">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                   fill="#e8eaed">
-                   <path
-                      d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
-                </svg>
-             </a>
-             <ul
-                class="group-hover:visible top-full right-0 absolute bg-slate-900 rounded-lg rounded-tr-none w-60 invisible">
-                <li class="hover:bg-slate-700 px-2 p-1 rounded-t-lg">
-                   <a href="" class="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                         fill="#e8eaed">
-                         <path
-                            d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
-                      </svg>
-                      <span class="">Notification Preferences</span>
-                   </a>
-                </li>
-                <li class="hover:bg-slate-700 px-2 p-1">
-                   <a href="" class="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                         fill="#e8eaed">
-                         <path
-                            d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z" />
-                      </svg>
-                      <span>24x7 Customer Care</span>
-                   </a>
-                </li>
-                <li class="hover:bg-slate-700 px-2 p-1 rounded-b-lg">
-                   <a href="" class="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                         fill="#e8eaed">
-                         <path
-                            d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" />
-                      </svg>
-                      <span>Advertise</span>
-                   </a>
-                </li>
-             </ul>
-          </li>
-       </ul>
-    </nav>
-
- </header>
-  <h1 class="mt-5 ml-16 font-semibold text-2xl">More to Love</h1>
-  <div class="flex gap-9 mt-5 ml-16">
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="Blutooth.html"><img src="./images/airpods.webp" width="200px" height="100px" class="rounded-[09%]"></a>
-
-      <h6 class="mt-2">FANGTUOSI M19 Bluetooth...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">1000+ sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">18.</span><span>00</span> <span
-        style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-      <button class="bg-rose-600 px-0.5 rounded text-sm text-white">Welcome Deal</button><span class="text-red-600">-
-        85%</span>
-      <h4>Free Shipping</h4>
-    </div>
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="girl.html"><img src="./images/girl.webp" width="200px" height="100px" class="rounded-[09%]"></a>
-      <h6 class="mt-2"> 13X4 Gluless wig bob...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">155 sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">392.</span><span>08</span>
-      <span style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-      <h4>Free Shipping</h4>
-    </div>
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="watch.html"><img src="./images/watch.webp" width="200px" height="100px" class="rounded-[09%]"></a>
-      <h6 class="mt-2"> Multifunctional Smart watch...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">5000+ sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">64.</span><span>56</span> <span
-        style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-      <h3 class="font-bold text-rose-600">Extra 2% off with coins</h3>
-      <h4>Free Shipping</h4>
-    </div>
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="mobile.html"><img src="./images/./mobile cover.webp" width="200px" height="100px"
-          class="rounded-[09%]"></a>
-      <h6 class="mt-2"> For itel A05s mobile case...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">1000+ sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">18.</span><span>00</span> <span
-        style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-      <h3 class="font-bold text-rose-600">Extra 2% off with coins</h3>
-
-      <h4>Free Shipping</h4>
-    </div>
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="usb.html"><img src="./images/./usb.webp" width="200px" height="100px" class="rounded-[09%]"></a>
-      <h6 class="mt-2"> Lenovo pen drive 2TB high...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">1000+ sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">18.</span><span>00</span> <span
-        style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-      <h4>Free Shipping</h4>
-    </div>
-  </div>
-  <div class="flex gap-9 mt-7 ml-16">
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="setup.html"><img src="./images/./setup.webp" width="200px" height="100px" class="rounded-[09%]"></a>
-      <h6 class="mt-2">USB 1 Led Strip Light ...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">1000+ sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">18.</span><span>00</span> <span
-        style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-      <h3 class="font-bold text-rose-600">Extra 2% off with coins</h3>
-      <h4>Free Shipping</h4>
-    </div>
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="besharm.html"><img src="./images/./besharm.webp" width="200px" height="100px" class="rounded-[09%]"></a>
-      <h6 class="mt-2"> Soft Gluless Black 26 long...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">1000+ sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">829.</span><span>27</span>
-      <span style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-
-      <h4>Free Shipping</h4>
-    </div>
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="totia.html"><img src="./images/./totia.webp" width="200px" height="100px" class="rounded-[09%]"></a>
-      <h6 class="mt-2">FANGTUOSI M19 Bluetooth...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">1000+ sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">18.</span><span>00</span> <span
-        style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-      <h3 class="font-bold text-rose-600">Extra 2% off with coins</h3>
-      <h4>Free Shipping</h4>
-    </div>
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="crystal.html"><img src="./images/./crystal.webp" width="200px" height="100px" class="rounded-[09%]"></a>
-      <h6 class="mt-2">FANGTUOSI M19 Crystals...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">1000+ sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">18.</span><span>00</span> <span
-        style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-      <h3 class="font-bold text-rose-600">Extra 2% off with coins</h3>
-      <h4>Free Shipping</h4>
-    </div>
-    <div class="hover:shadow-2xl p-2 rounded-[10%]">
-      <a href="ctype.html"><img src="./images/./ctype.webp" width="200px" height="100px" class="rounded-[09%]"></a>
-      <h6 class="mt-2">FANGTUOSI M19 Ctype cable...</h6>
-      <ul class="flex text-sm">
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-star"></i></li> <span class="ml-2 text-gray-500 text-sm">1000+ sold</span>
-      </ul>
-      <span class="font-semibold text-sm">ZAR</span> <span class="font-bold text-2xl">18.</span><span>00</span> <span
-        style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
-      <h3 class="font-bold text-rose-600">Extra 2% off with coins</h3>
-      <h4>Free Shipping</h4>
-    </div>
-  </div>
-  <section class="bg-blue-200 mx-24 mt-5 ml-28 pl-10 rounded h-[400px]">
-    <div class="float-right">
-      <img src="./demopages/images/iphone.png" class="mt-14 mr-28 rounded-lg w-[250px] h-[300px]" alt="" />
-    </div>
-    <div class="absolute pt-10">
-      <h2 class="font-medium text-2xl">Grand Offer</h2>
-    </div>
-    <div>
-      <h3 class="pt-20 font-semibold text-lg">Get upto 50% off today</h3>
-
-    </div>
-    <h1 class="mt-6 font-semibold text-5xl">Iphone 15 pro max</h1>
-
-    <div class="flex gap-3 mt-4">
-      <div class="font-medium text-3xl text-red-600">$150.00</div>
-      <div class="pt-2 font-medium text-gray-500 text-xl" style="text-decoration: line-through">
-        $200.00
+<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <section class="bg-blue-200 mt-5 mx-24 ml-28 pl-10 h-[400px] rounded">
+      <div class="float-right">
+        <img
+          src="./demopages/images/iphone.png"
+          class="w-[250px] h-[300px] mr-28 mt-14 rounded-lg"
+          alt=""
+        />
       </div>
+      <div class="absolute pt-10   "> 
+      <h2 class="text-2xl font-medium  ">Grand Offer</h2>
     </div>
-
-    <div class="mt-10">
-      <button class="mt-4">
-        <a href="#"
-          class="bg-rose-500 hover:bg-white px-6 py-3 border border-red-500 rounded font-medium text-white hover:text-red-600 transition duration-500">Shop
-          Now</a>
-      </button>
-    </div>
-  </section>
-
-  <section class="flex gap-8 mt-4 ml-40">
-    <div class="flex gap-7 bg-white p-4 border border-red-600 w-[300px]">
-      <img src="/images/delivery-van.svg" width="50px" height="50px" alt="">
       <div>
-        <h2 class="font-medium">Free Shipping</h2>
-        <h2>Orders over $200</h2>
+        <h3 class="pt-20 font-semibold text-lg ">Get upto 50% off today</h3>
+         
       </div>
-    </div>
-
-    </div>
-    <div class="flex gap-7 bg-white p-4 border border-red-600 w-[300px]">
-      <img src="/images/money-back.svg" width="50px" height="50px" alt="">
-      <div>
-        <h2 class="font-medium"> Money Returns</h2>
-        <h2> 30 Days money returns</h2>
+      <h1 class="font-semibold text-5xl mt-6">Iphone 15 pro max</h1>
+     
+      <div class="flex gap-3 mt-4">
+        <div class="font-medium text-3xl text-red-600">$150.00</div>
+        <div
+          class="font-medium text-xl pt-2 text-gray-500"
+          style="text-decoration: line-through"
+        >
+          $200.00
+        </div>
       </div>
-    </div>
-
-    </div>
-    <div class="flex gap-7 bg-white p-4 border border-red-600 w-[300px]">
-      <img src="/images/service-hours.svg" width="50px" height="50px" alt="">
-      <div>
-        <h2 class="font-medium">24/7 Support</h2>
-        <h2>Customer Support</h2>
-      </div>
-    </div>
-
-    </div>
-  </section>
-  <div class="flex gap-10">
-    <div class="bg-white shadow-xl mt-7 ml-28 p-5 rounded-xl w-[300px] h-[310px]">
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Groceries & Pets</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Health & Beauty</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Men's Fashion</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Women's Fashion</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Mother & Baby</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Home & Lifestyle</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Electronic Devices</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Electronic Accessories</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          TV & Home Appliances</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Sports & Outdoor</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Watches, Bags & Jewellery</h6>
-      </a>
-      <a href="#">
-        <h6
-          class="hover:bg-gray-200 ml-3 rounded-md font-medium text-gray-500 text-md hover:text-orange-500 transition duration-200">
-          Automotive & Motorbikes</h6>
-      </a>
-    </div>
-    <div class="mt-8">
-      <img src=" /images/flash sale.jpg" class="mr-10 rounded-xl w-[400%] h-[305px]">
+     
       <div class="mt-10">
         <button class="mt-4">
-          <a href="#"
-            class="absolute border-amber-500 bg-amber-400 hover:bg-white -mt-[120px] ml-[25px] px-6 py-3 hover:border rounded font-medium text-white hover:text-amber-600 transition duration-500 ye"
-            style="border: 1px solid orange;">Shop Now</a>
+          <a
+            href="#"
+            class="text-white bg-rose-500 py-3 px-6 rounded font-medium hover:bg-white hover:text-red-600 border border-red-500 transition duration-500"
+            >Shop Now</a
+          >
+        </button>
+      </div>
+    </section>
+   
+      <section class="flex gap-8 mt-4 ml-40"> 
+        <div class="flex border border-red-600 p-4 bg-white w-[300px] gap-7">
+          <img src="/images/delivery-van.svg" width="50px" height="50px" alt="">
+          <div> 
+           <h2 class="font-medium">Free Shipping</h2>
+           <h2>Orders over $200</h2>
+          </div>
+        </div>
+       
+      </div>
+        <div class="flex border border-red-600 p-4 bg-white w-[300px] gap-7">
+          <img src="/images/money-back.svg" width="50px" height="50px" alt="">
+          <div> 
+           <h2 class="font-medium"> Money Returns</h2>
+           <h2> 30 Days money returns</h2>
+          </div>
+        </div>
+       
+      </div>
+        <div class="flex border border-red-600 p-4 bg-white w-[300px] gap-7">
+          <img src="/images/service-hours.svg" width="50px" height="50px" alt="">
+          <div> 
+           <h2 class="font-medium">24/7 Support</h2>
+           <h2>Customer Support</h2>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <div class="flex gap-10"> 
+    <div class="bg-white rounded-xl w-[300px] h-[310px] mt-7 p-5 ml-28 shadow-xl">
+      <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Groceries & Pets</h6></a>
+      <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200" >Health & Beauty</h6></a>
+     <a href="#"> <h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Men's Fashion</h6></a>
+      <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Women's Fashion</h6></a>
+     <a href="#"> <h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Mother & Baby</h6></a>
+     <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Home & Lifestyle</h6></a> 
+      <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Electronic Devices</h6></a>
+      <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Electronic Accessories</h6></a>
+    <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">TV & Home Appliances</h6></a>  
+     <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Sports & Outdoor</h6></a> 
+     <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Watches, Bags & Jewellery</h6></a> 
+      <a href="#"><h6 class="font-medium text-md ml-3 text-gray-500 hover:bg-gray-200 rounded-md hover:text-orange-500 transition duration-200">Automotive & Motorbikes</h6></a>
+    </div>
+    <div class="mt-8">
+      <img src=" /images/flash sale.jpg" class="rounded-xl mr-10 h-[305px] w-[400%]  ">
+      <div class="mt-10">
+        <button class="mt-4">
+          <a
+            href="#"
+            class="text-white ye py-3 px-6 rounded font-medium bg-amber-400 transition duration-500 absolute -mt-[120px] ml-[25px] hover:bg-white hover:text-amber-600 hover:border border-amber-500" style="border: 1px solid orange;"
+            >Shop Now</a
+          >
         </button>
       </div>
     </div>
-
-  </div>
-  <a href="#">
-    <div class="flex gap-16 bg-orange-100 hover:bg-orange-300 mx-auto mt-6 py-3 pl-20 transition duration-150"
-      style="max-width: calc(100% - 54px);">
-      <h2 class="text-lg">Safe Payments |</h2>
-      <h2 class="text-lg"> NationWide Delivery |</h2>
-      <h2 class="text-lg">Free & Easy Returns |</h2>
-      <h2 class="text-lg">Best Price Guranted |</h2>
-      <h2 class="text-lg">100% Authentic Products |</h2>
-      <h2 class="text-lg">Daraz Verified</h2>
-    </div>
-  </a>
+    
+  </div >
+  <a href="#"> <div class="flex gap-16 bg-orange-100 hover:bg-orange-300 transition duration-150 pl-20 py-3 mt-6 mx-auto  " style="max-width: calc(100% - 54px);">
+    <h2 class=" text-lg">Safe Payments |</h2>
+    <h2 class=" text-lg"> NationWide Delivery |</h2>
+    <h2 class=" text-lg">Free & Easy Returns |</h2>
+    <h2 class=" text-lg">Best Price Guranted |</h2>
+    <h2 class=" text-lg">100% Authentic Products |</h2>
+    <h2 class=" text-lg">Daraz Verified</h2>
+  </div></a>
   <div class="mt-8">
-    <img src=" /images/fashion.jpg" class="mr-10 ml-9 rounded-xl w-[700%] h-[305px]"
-      style="max-width: calc(100% - 54px);" alt="">
-
+    <img src=" /images/fashion.jpg" class="rounded-xl mr-10 h-[305px] w-[700%] ml-9 " style="max-width: calc(100% - 54px);" alt="">
+    
   </div>
-  <h1 class="mt-4 ml-10 font-medium text-3xl text-gray-500">Categories</h1>
-  <div class="flex mt-4 ml-16">
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
-      <img src=" /images/daraz1.jpg" width="160px" height="120px" alt="">
-      <h2 class="pt-2 font-semibold text-lg">Wardrobe Organizor</h2>
-    </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
-      <img src=" /images/daraz2.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg"> Moisturizer</h2>
-    </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
-      <img src=" /images/daraz3.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg"> Shampoo</h2>
-    </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
-      <img src=" /images/daraz4.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg">Space savers</h2>
-    </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
-      <img src=" /images/daraz5.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg">Clip,pins&tracks</h2>
-    </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
-      <img src=" /images/daraz6.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg"> Speciality kiten tools</h2>
-    </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
-      <img src="/images/daraz7.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg"> Art easels</h2>
-    </div>
+  <h1 class="text-3xl font-medium ml-10 mt-4 text-gray-500">Categories</h1>
+  <div class="flex ml-16 mt-4">
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl "> 
+    <img src=" /images/daraz1.jpg" width="160px" height="120px" alt="">
+    <h2 class="font-semibold text-lg pt-2">Wardrobe Organizor</h2>
   </div>
-  <div class="flex ml-16">
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
+    <img src=" /images/daraz2.jpg" width="160px" height="100px" alt="">
+    <h2 class="font-semibold text-lg pt-2 text-center"> Moisturizer</h2>
+  </div>
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
+    <img src=" /images/daraz3.jpg" width="160px" height="100px" alt="">
+    <h2 class="font-semibold text-lg pt-2 text-center"> Shampoo</h2>
+  </div>
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
+    <img src=" /images/daraz4.jpg" width="160px" height="100px" alt="">
+    <h2 class="font-semibold text-lg pt-2 text-center">Space savers</h2>
+  </div>
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
+    <img src=" /images/daraz5.jpg" width="160px" height="100px" alt="">
+    <h2 class="font-semibold text-lg pt-2 text-center">Clip,pins&tracks</h2>
+  </div>
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
+    <img src=" /images/daraz6.jpg" width="160px" height="100px" alt="">
+    <h2 class="font-semibold text-lg pt-2 text-center"> Speciality kiten tools</h2>
+  </div>
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
+    <img src="/images/daraz7.jpg" width="160px" height="100px" alt="">
+    <h2 class="font-semibold text-lg pt-2 text-center"> Art easels</h2>
+  </div>
+  </div>
+  <div class="flex ml-16 ">
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
       <img src=" /images/daraz7.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg"> Art easels</h2>
+      <h2 class="font-semibold text-lg pt-2 text-center"> Art easels</h2>
     </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
       <img src=" /images/daraz8.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg">Cleaner </h2>
+      <h2 class="font-semibold text-lg pt-2 text-center">Cleaner </h2>
     </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
       <img src=" /images/daraz2.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg">Suits</h2>
+      <h2 class="font-semibold text-lg pt-2 text-center">Suits</h2>
     </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
       <img src=" /images/daraz6.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg">Wireless</h2>
+      <h2 class="font-semibold text-lg pt-2 text-center">Wireless</h2>
     </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
       <img src=" /images/daraz4.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg">Gravity Dispenser</h2>
+      <h2 class="font-semibold text-lg pt-2 text-center">Gravity Dispenser</h2>
     </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl"> 
       <img src=" /images/daraz7.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg">Fashions</h2>
+      <h2 class="font-semibold text-lg pt-2 text-center">Fashions</h2>
     </div>
-    <div class="border-gray-300 bg-white hover:shadow-2xl p-3 border w-[200px] cursor-pointer">
+    <div class="bg-white w-[200px] p-3 border border-gray-300 cursor-pointer hover:shadow-2xl "> 
       <img src="/images/daraz2.jpg" width="160px" height="100px" alt="">
-      <h2 class="pt-2 font-semibold text-center text-lg">Gadgets</h2>
+      <h2 class="font-semibold text-lg pt-2 text-center">Gadgets</h2>
     </div>
-
+    
   </div>
-
-  <h1 class="mt-4 ml-28 font-medium text-3xl text-gray-500">Flash Sale</h1>
+  
+  <h1 class="text-3xl font-medium ml-28 mt-4 text-gray-500">Flash Sale</h1>
   <section>
-    <div class="flex justify-between gap-20 bg-white mx-auto mt-4 w-11/12">
+    <div class="bg-white flex gap-20 justify-between mt-4 w-11/12 mx-auto">
       <div>
-        <h2 class="mt-4 p-4 font-semibold text-md text-orange-400">On Sale Now</h2>
+        <h2 class="text-orange-400 font-semibold text-md p-4 mt-4">On Sale Now</h2>
       </div>
       <div class="flex gap-4 -ml-[100px]">
-        <h2 class="mt-4 ml-10 p-4 font-semibold text-md text-orange-400">Ending in</h2>
+        <h2 class="text-orange-400 font-semibold text-md p-4 mt-4 ml-10">Ending in</h2>
         <ul class="flex gap-4 mt-4">
-          <li class="bg-orange-500 p-3 rounded w-[50px] h-[50px] text-lg text-white">13</li><span class="mt-2">:</span>
-          <li class="bg-orange-500 p-3 rounded w-[50px] h-[50px] text-lg text-white">08</li><span class="mt-2">:</span>
-          <li class="bg-orange-500 p-3 rounded w-[50px] h-[50px] text-lg text-white">10</li>
+          <li class="bg-orange-500 p-3 text-lg text-white w-[50px] h-[50px] rounded">13</li><span class="mt-2">:</span>
+          <li class="bg-orange-500 p-3 text-lg text-white w-[50px] h-[50px] rounded">08</li><span class="mt-2">:</span>
+          <li class="bg-orange-500 p-3 text-lg text-white w-[50px] h-[50px] rounded">10</li>
         </ul>
-      </div>
-      <div class="mr-10 ml-auto">
-        <button
-          class="border-orange-500 bg-orange-500 hover:bg-white mt-4 px-3 py-2 border rounded font-medium text-white hover:text-orange-500 transition duration-300">Shop
-          More</button>
+      </div> 
+      <div class="ml-auto mr-10"> 
+        <button class="border border-orange-500 rounded text-white bg-orange-500 hover:bg-white hover:text-orange-500 font-medium transition duration-300 px-3 py-2 mt-4">Shop More</button>
       </div>
     </div>
-
-
-
-    <div class="flex gap-8 bg-white mx-auto mt-4 p-7 w-11/12">
-      <div class="hover:shadow-2xl hover:shadow-gray-600 p-4 rounded cursor-pointer">
+    
+    
+  
+    <div class="bg-white flex gap-8 p-7 w-11/12 mx-auto mt-4">
+      <div class="p-4 rounded hover:shadow-2xl hover:shadow-gray-600 cursor-pointer"> 
         <a href="#"><img src="/images/keratin.jpg" width="250px" height="300px" alt="Keratin"></a>
-        <h2 class="mt-2 font-normal text-lg">UP town la keratin hair care balance mask...</h2>
-        <h2 class="font-semibold text-3xl text-orange-500">Rs.311</h2>
-        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1000</span><span
-          class="pl-2">-73%</span>
+        <h2 class="font-normal text-lg mt-2">UP town la keratin hair care balance mask...</h2>
+        <h2 class="text-orange-500 font-semibold text-3xl">Rs.311</h2>
+        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1000</span><span class="pl-2">-73%</span>
       </div>
-      <div class="hover:shadow-2xl hover:shadow-gray-600 p-4 rounded cursor-pointer">
+      <div class="p-4 rounded hover:shadow-2xl hover:shadow-gray-600 cursor-pointer"> 
         <a href="#"><img src="/images/clothes.jpg" width="250px" height="300px" alt="Clothes"></a>
-        <h2 class="mt-2 font-normal text-lg">UP town la keratin hair care balance mask...</h2>
-        <h2 class="font-semibold text-3xl text-orange-500">Rs.786</h2>
-        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1000</span><span
-          class="pl-2">-47%</span>
+        <h2 class="font-normal text-lg mt-2">UP town la keratin hair care balance mask...</h2>
+        <h2 class="text-orange-500 font-semibold text-3xl">Rs.786</h2>
+        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1000</span><span class="pl-2">-47%</span>
       </div>
-      <div class="hover:shadow-2xl hover:shadow-gray-600 p-4 rounded cursor-pointer">
+      <div class="p-4 rounded hover:shadow-2xl hover:shadow-gray-600 cursor-pointer"> 
         <a href="#"><img src="/images/roller.jpg" width="250px" height="300px" alt="Roller"></a>
-        <h2 class="mt-2 font-normal text-lg">UP town la keratin hair care balance mask...</h2>
-        <h2 class="font-semibold text-3xl text-orange-500">Rs.1000</h2>
-        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1600</span><span
-          class="pl-2">-40%</span>
+        <h2 class="font-normal text-lg mt-2">UP town la keratin hair care balance mask...</h2>
+        <h2 class="text-orange-500 font-semibold text-3xl">Rs.1000</h2>
+        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1600</span><span class="pl-2">-40%</span>
       </div>
-      <div class="hover:shadow-2xl hover:shadow-gray-600 p-4 rounded cursor-pointer">
+      <div class="p-4 rounded hover:shadow-2xl hover:shadow-gray-600 cursor-pointer"> 
         <a href="#"><img src="/images/bags.jpg" width="250px" height="300px" alt="Bags"></a>
-        <h2 class="mt-2 font-normal text-lg">UP town la keratin hair care balance mask...</h2>
-        <h2 class="font-semibold text-3xl text-orange-500">Rs.500</h2>
-        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1000</span><span
-          class="pl-2">-50%</span>
+        <h2 class="font-normal text-lg mt-2">UP town la keratin hair care balance mask...</h2>
+        <h2 class="text-orange-500 font-semibold text-3xl">Rs.500</h2>
+        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1000</span><span class="pl-2">-50%</span>
       </div>
-      <div class="hover:shadow-2xl hover:shadow-gray-600 p-4 rounded cursor-pointer">
+      <div class="p-4 rounded hover:shadow-2xl hover:shadow-gray-600 cursor-pointer"> 
         <a href="#"><img src="/images/headlamp.jpg" width="250px" height="300px" alt="Headlamp"></a>
-        <h2 class="mt-2 font-normal text-lg">UP town la keratin hair care balance mask...</h2>
-        <h2 class="font-semibold text-3xl text-orange-500">Rs.400</h2>
-        <span style="text-decoration: line-through gray;" class="font-semibold text-md">800</span><span
-          class="pl-2">-50%</span>
+        <h2 class="font-normal text-lg mt-2">UP town la keratin hair care balance mask...</h2>
+        <h2 class="text-orange-500 font-semibold text-3xl">Rs.400</h2>
+        <span style="text-decoration: line-through gray;" class="font-semibold text-md">800</span><span class="pl-2">-50%</span>
       </div>
-      <div class="hover:shadow-2xl hover:shadow-gray-600 p-4 rounded cursor-pointer">
+      <div class="p-4 rounded hover:shadow-2xl hover:shadow-gray-600 cursor-pointer"> 
         <a href="#"><img src="/images/gluegun.jpg" width="250px" height="300px" alt="Glue Gun"></a>
-        <h2 class="mt-2 font-normal text-lg">UP town la keratin hair care balance mask...</h2>
-        <h2 class="font-semibold text-3xl text-orange-500">Rs.500</h2>
-        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1200</span><span
-          class="pl-2">-58%</span>
+        <h2 class="font-normal text-lg mt-2">UP town la keratin hair care balance mask...</h2>
+        <h2 class="text-orange-500 font-semibold text-3xl">Rs.500</h2>
+        <span style="text-decoration: line-through gray;" class="font-semibold text-md">1200</span><span class="pl-2">-58%</span>
       </div>
     </div>
   </section>
-
-  <h1 class="mt-4 ml-16 font-medium text-3xl text-gray-500">Just for you</h1>
-  <div class="flex gap-10 mt-4 ml-16">
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/dress.webp" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
+  
+<h1 class="text-3xl font-medium ml-16 mt-4 text-gray-500">Just for you</h1>
+<div class="flex gap-10 ml-16 mt-4"> 
+<div>
+  <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+    <img src="/images/dress.webp" width="200px" height="200px" alt="">
+    <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+    <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+    <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+    <div class="flex gap-2"> 
+    <ul class="flex text-sm">
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]" ></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]" ></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]" ></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]" ></i></li>
+      </ul>
+      <h2>(1120)</h2>
     </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/comb.webp" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
+     
+  </div></a>
+</div>
+<div>
+  <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+    <img src="/images/comb.webp" width="200px" height="200px" alt="">
+    <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+    <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+    <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+    <div class="flex gap-2"> 
+    <ul class="flex text-sm">
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      </ul>
+      <h2>(1120)</h2>
     </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/cockpeat.webp" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
+     
+  </div></a>
+</div>
+<div>
+  <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+    <img src="/images/cockpeat.webp" width="200px" height="200px" alt="">
+    <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+    <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+    <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+    <div class="flex gap-2"> 
+    <ul class="flex text-sm">
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      </ul>
+      <h2>(1120)</h2>
     </div>
-
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/clash camera.jpg" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
+     
+  </div></a>
+</div>
+ 
+<div>
+  <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+    <img src="/images/clash camera.jpg" width="200px" height="200px" alt="">
+    <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+    <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+    <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+    <div class="flex gap-2"> 
+    <ul class="flex text-sm">
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      </ul>
+      <h2>(1120)</h2>
     </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/clothes.jpg" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
+     
+  </div></a>
+</div>
+<div>
+  <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+    <img src="/images/clothes.jpg" width="200px" height="200px" alt="">
+    <h2 class="font-medium font-serif text-xl ">Black and white <br>Dress...</h2>
+    <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+    <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+    <div class="flex gap-2"> 
+    <ul class="flex text-sm">
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+      </ul>
+      <h2>(1120)</h2>
     </div>
+     
+  </div></a>
+</div>
+</div>
+<div class="flex gap-10 ml-16 mt-4"> 
+  <div>
+    <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+      <img src="/images/cover.jpg" width="200px" height="200px" alt="">
+      <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+      <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+      <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+      <div class="flex gap-2"> 
+      <ul class="flex text-sm">
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        </ul>
+        <h2>(1120)</h2>
+      </div>
+       
+    </div></a>
   </div>
-  <div class="flex gap-10 mt-4 ml-16">
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/cover.jpg" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/daraz4.jpg" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
-
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/dr jason.webp" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/sunsilk.webp" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/basket.webp" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
+  <div>
+    <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+      <img src="/images/daraz4.jpg" width="200px" height="200px" alt="">
+      <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+      <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+      <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+      <div class="flex gap-2"> 
+      <ul class="flex text-sm">
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        </ul>
+        <h2>(1120)</h2>
+      </div>
+       
+    </div></a>
   </div>
-  <div class="flex gap-10 mt-4 ml-16">
-
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/comb.webp" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/cockpeat.webp" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/car cover.webp" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/clash camera.jpg" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="#">
-        <div class="bg-white hover:shadow-2xl hover:shadow-gray-600 p-4 rounded-lg w-[200px] cursor-pointer hover:">
-          <img src="/images/clothes.jpg" width="200px" height="200px" alt="">
-          <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
-          <h2 class="font-medium text-2xl text-rose-500">Rs.1,410</h2>
-          <span class="font-medium text-gray-500 text-md"
-            style="text-decoration: line-through;">2,350</span><span>-38%</span>
-          <div class="flex gap-2">
-            <ul class="flex text-sm">
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-              <li><i class="text-[#ffa600] fa-solid fa-star"></i></li>
-            </ul>
-            <h2>(1120)</h2>
-          </div>
-
-        </div>
-      </a>
-    </div>
+   
+  <div>
+    <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+      <img src="/images/dr jason.webp" width="200px" height="200px" alt="">
+      <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+      <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+      <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+      <div class="flex gap-2"> 
+      <ul class="flex text-sm">
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        </ul>
+        <h2>(1120)</h2>
+      </div>
+       
+    </div></a>
   </div>
-  <div class="ml-[500px]">
-    <button
-      class="relative before:-top-[5px] before:-right-[5px] before:-bottom-[5px] before:-left-[5px] z-10 before:-z-10 before:absolute before:content-[''] before:bg-[length:400%] before:hover:bg-[length:10%] bg-[length:400%] hover:bg-[length:100%] active:bg-violet-700 bg-gradient-to-r before:bg-gradient-to-r from-10% from-violet-500 before:from-violet-500 before:from-10% via-30% via-sky-500 before:via-sky-500 before:via-30% to-90% to-pink-500 before:to-pink-500 before:hover:blur-xl mt-14 rounded-[30px] before:rounded-[35px] w-[500px] h-[3em] font-bold text-[14px] text-center text-white before:transition-all hover:animate-gradient-xy before:duration-[1s] cursor-pointer before:ease-in-out focus:ring-violet-700">
+  <div>
+    <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+      <img src="/images/sunsilk.webp" width="200px" height="200px" alt="">
+      <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+      <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+      <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+      <div class="flex gap-2"> 
+      <ul class="flex text-sm">
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        </ul>
+        <h2>(1120)</h2>
+      </div>
+       
+    </div></a>
+  </div>
+  <div>
+    <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+      <img src="/images/basket.webp" width="200px" height="200px" alt="">
+      <h2 class="font-medium font-serif text-xl ">Black and white <br>Dress...</h2>
+      <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+      <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+      <div class="flex gap-2"> 
+      <ul class="flex text-sm">
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+        </ul>
+        <h2>(1120)</h2>
+      </div>
+       
+    </div></a>
+  </div>
+  </div>
+  <div class="flex gap-10 ml-16 mt-4"> 
+    
+    <div>
+      <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+        <img src="/images/comb.webp" width="200px" height="200px" alt="">
+        <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+        <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+        <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+        <div class="flex gap-2"> 
+        <ul class="flex text-sm">
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          </ul>
+          <h2>(1120)</h2>
+        </div>
+         
+      </div></a>
+    </div>
+    <div>
+      <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+        <img src="/images/cockpeat.webp" width="200px" height="200px" alt="">
+        <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+        <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+        <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+        <div class="flex gap-2"> 
+        <ul class="flex text-sm">
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          </ul>
+          <h2>(1120)</h2>
+        </div>
+         
+      </div></a>
+    </div>
+    <div>
+      <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+        <img src="/images/car cover.webp" width="200px" height="200px" alt="">
+        <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+        <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+        <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+        <div class="flex gap-2"> 
+        <ul class="flex text-sm">
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          </ul>
+          <h2>(1120)</h2>
+        </div>
+         
+      </div></a>
+    </div>
+    <div>
+      <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+        <img src="/images/clash camera.jpg" width="200px" height="200px" alt="">
+        <h2 class="font-medium font-serif text-xl">Black and white <br>Dress...</h2>
+        <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+        <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+        <div class="flex gap-2"> 
+        <ul class="flex text-sm">
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          </ul>
+          <h2>(1120)</h2>
+        </div>
+         
+      </div></a>
+    </div>
+    <div>
+      <a href="#"><div class="bg-white w-[200px] cursor-pointer p-4 rounded-lg hover:  hover:shadow-2xl hover:shadow-gray-600 ">
+        <img src="/images/clothes.jpg" width="200px" height="200px" alt="">
+        <h2 class="font-medium font-serif text-xl ">Black and white <br>Dress...</h2>
+        <h2 class="text-rose-500 text-2xl font-medium">Rs.1,410</h2>
+        <span class="text-gray-500 font-medium text-md" style="text-decoration: line-through;">2,350</span><span>-38%</span>
+        <div class="flex gap-2"> 
+        <ul class="flex text-sm">
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          <li><i class="fa-solid fa-star text-[#ffa600]"></i></li>
+          </ul>
+          <h2>(1120)</h2>
+        </div>
+         
+      </div></a>
+    </div>
+    </div>
+    <div class="ml-[500px]">
+      <button
+      class=" mt-14  cursor-pointer text-white font-bold relative text-[14px] w-[500px] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700"
+      >
       Load More
-    </button><br><br>
-  </div>
+      </button><br><br>
+      
+  </body>
+=======
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="/demopages/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <h1 class="text-2xl font-semibold ml-16 mt-5">More to Love</h1>
+   <div class="flex gap-9 ml-16 mt-5">
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="Blutooth.html"><img src="./images/airpods.webp" width="200px" height="100px"
+               class="rounded-[09%] "></a>
+
+         <h6 class="mt-2">FANGTUOSI M19 Bluetooth...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">1000+ sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">18.</span><span>00</span> <span
+            style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+         <button class="text-white bg-rose-600 px-0.5 text-sm rounded">Welcome Deal</button><span class="text-red-600">-
+            85%</span>
+         <h4>Free Shipping</h4>
+      </div>
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="girl.html"><img src="./images/girl.webp" width="200px" height="100px" class="rounded-[09%]"></a>
+         <h6 class="mt-2"> 13X4 Gluless wig bob...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">155 sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">392.</span><span>08</span>
+         <span style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+         <h4>Free Shipping</h4>
+      </div>
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="watch.html"><img src="./images/watch.webp" width="200px" height="100px" class="rounded-[09%]"></a>
+         <h6 class="mt-2"> Multifunctional Smart watch...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">5000+ sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">64.</span><span>56</span> <span
+            style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+         <h3 class="text-rose-600 font-bold">Extra 2% off with coins</h3>
+         <h4>Free Shipping</h4>
+      </div>
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="mobile.html"><img src="./images/./mobile cover.webp" width="200px" height="100px"
+               class="rounded-[09%]"></a>
+         <h6 class="mt-2"> For itel A05s mobile case...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">1000+ sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">18.</span><span>00</span> <span
+            style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+         <h3 class="text-rose-600 font-bold">Extra 2% off with coins</h3>
+
+         <h4>Free Shipping</h4>
+      </div>
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="usb.html"><img src="./images/./usb.webp" width="200px" height="100px" class="rounded-[09%]"></a>
+         <h6 class="mt-2"> Lenovo pen drive 2TB high...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">1000+ sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">18.</span><span>00</span> <span
+            style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+         <h4>Free Shipping</h4>
+      </div>
+   </div>
+   <div class="flex gap-9 ml-16 mt-7">
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="setup.html"><img src="./images/./setup.webp" width="200px" height="100px" class="rounded-[09%]"></a>
+         <h6 class="mt-2">USB 1 Led Strip Light ...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">1000+ sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">18.</span><span>00</span> <span
+            style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+         <h3 class="text-rose-600 font-bold">Extra 2% off with coins</h3>
+         <h4>Free Shipping</h4>
+      </div>
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="besharm.html"><img src="./images/./besharm.webp" width="200px" height="100px"
+               class="rounded-[09%]"></a>
+         <h6 class="mt-2"> Soft Gluless Black 26 long...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">1000+ sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">829.</span><span>27</span>
+         <span style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+
+         <h4>Free Shipping</h4>
+      </div>
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="totia.html"><img src="./images/./totia.webp" width="200px" height="100px" class="rounded-[09%]"></a>
+         <h6 class="mt-2">FANGTUOSI M19 Bluetooth...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">1000+ sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">18.</span><span>00</span> <span
+            style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+         <h3 class="text-rose-600 font-bold">Extra 2% off with coins</h3>
+         <h4>Free Shipping</h4>
+      </div>
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="crystal.html"><img src="./images/./crystal.webp" width="200px" height="100px"
+               class="rounded-[09%]"></a>
+         <h6 class="mt-2">FANGTUOSI M19 Crystals...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">1000+ sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">18.</span><span>00</span> <span
+            style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+         <h3 class="text-rose-600 font-bold">Extra 2% off with coins</h3>
+         <h4>Free Shipping</h4>
+      </div>
+      <div class="hover:shadow-2xl rounded-[10%] p-2">
+         <a href="ctype.html"><img src="./images/./ctype.webp" width="200px" height="100px" class="rounded-[09%]"></a>
+         <h6 class="mt-2">FANGTUOSI M19 Ctype cable...</h6>
+         <ul class="flex text-sm">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li> <span class="text-sm ml-2 text-gray-500">1000+ sold</span>
+         </ul>
+         <span class="font-semibold text-sm">ZAR</span> <span class="text-2xl font-bold">18.</span><span>00</span> <span
+            style="text-decoration: line-through;" class="text-gray-500 text-sm">ZAR125.2</span><br>
+         <h3 class="text-rose-600 font-bold">Extra 2% off with coins</h3>
+         <h4>Free Shipping</h4>
+      </div>
+   </div>
 </body>
 
+>>>>>>> 6b7eab0cc001866a124733576b17d7c57576dc6f
 </html>
