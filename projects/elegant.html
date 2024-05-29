@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Navbar with Dropdowns</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for dropdown */
+        .dropdown-menu {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Brand</a>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="#" class="text-white hover:text-gray-200">Home</a>
+                <div class="relative dropdown">
+                    <button class="text-white hover:text-gray-200">Services</button>
+                    <div class="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl dropdown-menu">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Web Design</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">App Development</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">SEO Services</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <button class="text-white hover:text-gray-200">About</button>
+                    <div class="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl dropdown-menu">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Our Team</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Careers</a>
+                    </div>
+                </div>
+                <a href="#" class="text-white hover:text-gray-200">Contact</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden">
+            <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600">Home</a>
+            <div class="relative dropdown">
+                <button class="w-full text-left block px-4 py-2 text-white hover:bg-blue-600">Services</button>
+                <div class="pl-4 dropdown-menu">
+                    <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600">Web Design</a>
+                    <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600">App Development</a>
+                    <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600">SEO Services</a>
+                </div>
+            </div>
+            <div class="relative dropdown">
+                <button class="w-full text-left block px-4 py-2 text-white hover:bg-blue-600">About</button>
+                <div class="pl-4 dropdown-menu">
+                    <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600">Our Team</a>
+                    <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600">Careers</a>
+                </div>
+            </div>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-button').onclick = function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        };
+    </script>
+</body>
+</html>
